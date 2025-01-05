@@ -42,6 +42,7 @@ export default function ContactUs() {
         About Us
     </Button>
 </View>
+<Text>{name}</Text>
 
 
             </KeyboardAvoidingView>
