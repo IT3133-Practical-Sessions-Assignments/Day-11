@@ -56,3 +56,37 @@ export default function ContactUs() {
 
     );
 }
+const styles = StyleSheet.create({
+    container: {
+        flexDirection: 'column',
+        backgroundColor: '#fff',
+        justifyContent: 'space-between',
+        padding: 10
+    },
+    header: {
+        flex: 3,
+        width: "100%",
+        alignItems: 'center',
+        padding: 10,
+        marginBottom: 10
+    },
+    body: {
+        flex: 5,
+        width: "100%"
+    },
+    footer: {
+        flex: 2,
+        width: "100%",
+        alignItems: 'center'
+    },
+    input: {
+        padding: 8,
+        marginBottom: 7
+    },
+    scrollView: {
+        flexGrow: 1, // Ensures the ScrollView behaves correctly
+    },
+    keyboardAvoidingView: {
+        flex: 1, // Ensures proper layout with keyboard adjustments
+      }
+});
