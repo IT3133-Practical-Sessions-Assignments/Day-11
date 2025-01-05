@@ -1,7 +1,13 @@
-import { useNavigation } from '@react-navigation/native'; 
-import { StyleSheet, View, ScrollView, Image } from 'react-native'; 
-import { PaperProvider, Text, Divider, Button } from 'react-native-paper'; 
+import { useNavigation } from '@react-navigation/native';
+import { StyleSheet, View, ScrollView, Image } from 'react-native';
+import { PaperProvider, Text, Divider, Button } from 'react-native-paper';
 
 
 export default function AboutUs() {
-    const navigation = useNavigation(); 
+    const navigation = useNavigation();
+    return (
+
+        <PaperProvider>
+
+            <ScrollView contentContainerStyle={styles.scrollView}>
+                <View style={styles.container}>
