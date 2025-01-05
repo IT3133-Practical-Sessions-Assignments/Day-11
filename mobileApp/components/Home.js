@@ -1,5 +1,3 @@
-export default function Home() {
-    return(
-        <Text variant="headlineLarge">Headline Large</Text>
-    );
-}
+import { useNavigation } from '@react-navigation/native';
+import { StyleSheet, View, ScrollView } from 'react-native';
+import { PaperProvider, Text, Divider, Button } from 'react-native-paper';
