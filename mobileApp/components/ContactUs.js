@@ -37,6 +37,11 @@ export default function ContactUs() {
                     <View style={styles.input}>
                         <TextInput label="Message" mode='outlined' multiline numberOfLines={5} />
                     </View>
+                    <View style={styles.input}>
+    <Button mode='contained' onPress={() => navigation.navigate('aboutus')}>
+        About Us
+    </Button>
+</View>
 
 
             </KeyboardAvoidingView>
