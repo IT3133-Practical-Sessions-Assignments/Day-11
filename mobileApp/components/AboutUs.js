@@ -32,4 +32,7 @@ The permanent site of the University of Vavuniya is located about ten kilometers
 <Button mode="outlined" onPress={() => navigation.popToTop()}>
     Go to Top Screen
 </Button>
+<View style={styles.footer}>
+    <Text>MyApp © 2024</Text>
+</View>
 
