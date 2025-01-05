@@ -38,3 +38,18 @@ export default function Home() {
         </PaperProvider>
     );
 }
+const styles = StyleSheet.create({
+    container: {
+        flexDirection: 'column',
+        backgroundColor: '#fff',
+        justifyContent: 'space-between',
+        padding: 10
+    },
+    body: {
+        padding: 8,
+        textAlign: 'justify'
+    },
+    scrollView: {
+        flexGrow: 1, // Ensures the ScrollView behaves correctly
+    },
+});
