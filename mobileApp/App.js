@@ -8,13 +8,20 @@ import AboutUs from './AboutUs'; // Placeholder for About Us screen
 const Stack = createStackNavigator();
 
 export default function App() {
+  const Stack = createNativeStackNavigator();
   return (
+    <SafeAreaProvider>
     <NavigationContainer>
-      <Stack.Navigator initialRouteName="Home">
+      <Stack.Navigator initialRouteName="Home"
+      screenOptions={{
+        headerStyle: { backgroundColor: '#e2bee2' },
+      }}
+    >
         <Stack.Screen name="Home" component={Home} />
         <Stack.Screen name="Contact" component={Contact} />
         <Stack.Screen name="AboutUs" component={AboutUs} />
       </Stack.Navigator>
     </NavigationContainer>
+    </SafeAreaProvider>
   );
 }
